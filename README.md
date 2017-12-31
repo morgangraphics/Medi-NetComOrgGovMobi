@@ -56,14 +56,23 @@ json-server is fully RESTful and could have just as easily been used for data st
 
 This runs the data for the charting
 
-```bash
-# Clone repo
-cd YOUR_REPO_NAME
-```
+
+
+
 
 ## Setup
 
 This is running the development build of things so it's slow and noisy, but it gives the best look at the app.
+
+```bash
+# Clone repo
+git clone git@github.com:morgangraphics/Medi-NetComOrgGovMobi.git
+```
+
+```bash
+# CD
+cd Medi-NetComOrgGovMobi
+```
 
 ```bash
 #In a new terminal install dependencies
@@ -78,6 +87,7 @@ pm2 --version
 #should return something like
 $ 2.9.1
 ```
+
 ```bash
 #Spin up the app
 npm run demo
@@ -88,10 +98,12 @@ npm run demo
 #In a terminal window #1 spin up the JSON server
 nvm use 8.9.3 && ./node_modules/json-server/bin/index.js src/data/db.json --fks '_id'
 ```
+
 ```bash
 #In a terminal window #2 spin up the Front End
 nvm use 8.9.3 && npm run frontend-dev
 ```
+
 ```bash
 #In a terminal window #3 spin up the Backend
 nvm use 8.9.3 && npm run backend-dev
