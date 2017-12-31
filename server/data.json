@@ -1,0 +1,128 @@
+{
+  "doctors": [
+    {
+      "name": "Dr. John Doe, M.D.",
+      "userName": "DrDre",
+      "password": "secret",
+      "acls": [
+        "doctor",
+        "admin"
+      ],
+      "userType": "doctor",
+      "userID": "114233",
+      "mfa": true,
+      "patients": [
+        "A000",
+        "A001",
+        "A002",
+        "A003",
+        "A004",
+        "A005"
+      ]
+    },
+    {
+      "name": "HOUSE, M.D.",
+      "userName": "House",
+      "password": "secret",
+      "acls": [
+        "doctor"
+      ],
+      "userType": "",
+      "userID": "114",
+      "mfa": true
+    }
+  ],
+  "patients": [
+    {
+      "name": "Jane Doe",
+      "address": {
+        "street": "123 Anywhere Street",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "90201"
+      },
+      "phone": "321.123.9888",
+      "userName": "Patient 0",
+      "password": "secret",
+      "acls": [
+        "patient"
+      ],
+      "userType": "patient",
+      "userID": "A000",
+      "mfa": false
+    },
+    {
+      "name": "John Doe",
+      "address": {
+        "street": "123 Anywhere Lane",
+        "city": "Naperville",
+        "state": "IL",
+        "zip": "10010"
+      },
+      "phone": "321.777.4433",
+      "userName": "NotDeadYet",
+      "password": "secret",
+      "acls": [
+        "patient"
+      ],
+      "userType": "patient",
+      "userID": "A001",
+      "mfa": false
+    }
+  ],
+  "appointments": {
+    "A000": [
+      {
+        "date": "",
+        "message": "",
+        "status": ""
+      },
+      {
+        "date": "",
+        "message": "",
+        "status": ""
+      },
+      {
+        "date": "",
+        "message": "",
+        "status": ""
+      }
+    ],
+    "A001": [
+      {
+        "date": "",
+        "message": "Nice work",
+        "status": "Paid"
+      },
+      {
+        "date": "",
+        "message": "This is not good",
+        "status": "Follow up needed"
+      },
+      {
+        "date": "",
+        "message": "",
+        "status": ""
+      }
+    ]
+  },
+  "files": {
+    "A000": [
+      {
+        "date": "",
+        "message": "",
+        "status": ""
+      },
+      {
+        "date": "",
+        "message": "",
+        "status": ""
+      },
+      {
+        "date": "",
+        "message": "",
+        "status": ""
+      }
+    ]
+  }
+}

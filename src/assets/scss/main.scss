@@ -1,0 +1,106 @@
+/* Using flex so we can reliably handle additional stuff when needed */
+body, html {
+  height: 99.9%;
+  width: 100%;
+  margin:0;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.el-container {
+  height: 95%;
+}
+
+.el-header {
+    background-color: #B3C0D1;
+    color: #333;
+    text-align: left;
+
+    .logo {
+      text-decoration: none;
+      color: #000;
+      float: left;
+    }
+
+    .signup, .welcome {
+      float: right;
+      margin-top: 1.5em;
+    }
+
+    &.menu {
+      padding: 0;
+    }
+}
+
+.el-footer {
+  align-items: flex-end;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  display: block;
+  background-color: #B3C0D1;
+  z-index:500;
+
+  span {
+    font-size: .6em;
+  }
+}
+
+.el-main {
+  background-color: #E9EEF3;
+  color: #333;
+  text-align: center;
+  height: 100%;
+  xmargin-bottom:120px;
+}
+
+.form {
+  p {
+    font-size: .75em;
+    text-align: left;
+  }
+  .forgot, .troubleshoot {
+    font-size: .75em;
+    a {
+      text-decoration: none;
+
+    }
+  }
+}
+
+body > .el-container {
+  margin-bottom: 40px;
+}
+
+#interface {
+  display: flex;
+  flex-flow: row;
+  width: 99%;
+}
+.patient {
+  flex: 1 25%;
+}
+.clipboard {
+  display: flex;
+  flex-flow: column;
+  flex: 1 75%;
+}
+.charts {
+  flex: 1 100%;
+  overflow: auto;
+
+}
+.chart {
+  max-width: 90%;
+  min-height: 300px;
+  margin-bottom: 20px;
+}
+.diagnosis {
+  flex: 1 100%;
+  overflow: auto;
+
+}
